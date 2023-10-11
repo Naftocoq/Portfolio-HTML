@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--This is a semantic webpage-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOHAMED NAFTI</title>
+  </head>
+  <!--rgb : 0.6 = 60% transparence-->
+  <header style="background-color: rgb(6, 76, 127, 0.6); padding: 1.5em">
+    <h1 style="color: #fff; text-align: center">MOHAMED NAFTI</h1>
+    <nav style="text-align: center">
+      <a href="#About me" style="color: #fff">About Me</a>
+      <a href="#Projects" style="color: #fff; margin: 25px">Projects</a>
+      <a href="#Contact" style="color: #fff">Contact me</a>
+    </nav>
+  </header>
+  <body background="./images/Background.jpg" style="font-family: Verdana">
+    <!-- Replace with the URL of your background image -->
+
+    <section id="About me" style="padding: 2rem; text-align: center">
+        <div>
+            <h2>About Me</h2>
+            <hr color="black" width="90">
+            <img src="./images/Profile.png" width="150" >
+            <br>
+            <p>
+              Hi, my name is Mohamed Nafti.
+              <br />
+              Welcome to my first website using HTML only. There is no css, just a
+              little bit of styles.
+              <br />
+              This is how internet looked like in the early 90's. 
+              <br>
+              Who knows ?! I might
+              be your futur web developper:)
+            </p>
+        </div>
+      
+    </section>
+
+    <section id="Projects" style="padding: 2rem; text-align: center">
+      <h2>Projects</h2>
+      <hr color="black" width="90">
+
+      <article 
+        style="
+          background-color: rgba(255, 255, 255, 0.6);
+          padding: 1rem;
+          border-radius: 5px;
+          margin-bottom: 20px;
+        "
+      >
+        <h3>Project 1</h3>
+        <p>
+            <ul style="text-align: left">
+                <li>Making a portfolio using HTML.</li>
+                <li>Sharing it with my instructor using Github.</li>
+            </ul>
+        </p>
+      </article>
+      <article
+        style="
+          background-color: rgba(255, 255, 255, 0.8);
+          padding: 1rem;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          margin-bottom: 20px;
+        "
+      >
+        <h3>Project 2</h3>
+        <p>
+            <ul style="text-align: left">
+                <li>Work in progress.</li>
+                <li>It should be a css project.</li>
+            </ul>
+        </p>
+      </article>
+    </section>
+    <a href="#top" style="color:black"><b>Haut de la page</b></a>
+    <br>
+
+    <footer id="Contact" 
+        style="padding: 2rem;
+        margin-top: 20px; 
+        text-align: center;
+        background-color: rgb(6, 76, 127); 
+        color: #fff;
+        padding: 1em">
+      <h2>Contact me</h2>
+      <hr color="white" width="90">
+      <form style="text-align: left">
+        <label for="Your email"><b>Your email</b></label>
+        <input type="email" placeholder="Email" id="email-sender" />
+        <br />
+        <label for="Message"><b>Message</b></label>
+        <input type="text" placeholder="Write your message here."/>
+        <br>
+        <input type="submit" value="Envoyer" />
+      </form>
+    </footer>
+  </body>
+</html>
