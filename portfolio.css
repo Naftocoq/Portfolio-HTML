@@ -37,8 +37,11 @@ h1 {
   margin: 0;
   font-family: Roboto Condensed;
   font-size: 50px;
+  text-transform: uppercase;
   display: inline;
   float: left;
+  letter-spacing: 2px;
+  word-spacing: 2px;
 }
 
 h2 {
