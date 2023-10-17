@@ -99,7 +99,7 @@ label {
   font-family: Roboto Condensed;
 }
 
-a {
+header a {
   text-decoration: none;
   color: white
 }
@@ -194,8 +194,11 @@ a {
   vertical-align: top;
 }
 
+#button1 a {text-decoration: none;color: white;
+}
+
 #button1 {
-  color: white;
+  
   /* Default text color */
   font-family: roboto;
   font-size: 16px;
@@ -213,7 +216,7 @@ a {
 
 #button1:hover {
   background-color: rgb(5, 31, 48);
-  color: black;
+  color: rgb(255, 255, 255);
   /* Not working*/
   transition: background-color 0.5s, color 0.5s;
   /* Smooth color transition */
