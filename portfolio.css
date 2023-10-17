@@ -1,0 +1,235 @@
+/* Grey borders } 
+header,
+body,
+section,
+h1,
+h2,
+h3,
+h4,
+p,
+form,
+input,
+label,
+button,
+ul,
+li,
+ol,
+nav,
+.card,
+div {
+  border: 1px solid grey;
+}*/
+
+header {
+  background-color: rgb(5, 31, 48);
+  width: 100%;
+  display: inline-block;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  padding-left: 20px;
+  padding-top: 10px;
+  margin: 0;
+  font-family: Roboto Condensed;
+  font-size: 50px;
+  display: inline;
+  float: left;
+}
+
+h2 {
+  color: rgb(46, 45, 45);
+  font-family: Roboto Condensed;
+  font-size: 35px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: Roboto Condensed;
+  font-size: 15px;
+}
+
+h4 {
+  font-family: Roboto Condensed;
+  font-size: 13px;
+}
+
+ul {
+  margin-top: 10;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  float: right;
+}
+
+.navbar {
+  margin-right: 20px;
+  margin-left: 20px;
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  vertical-align: middle;
+  display: inline;
+  width: fit-content;
+}
+
+.navbar :hover {
+  color: rgb(0, 204, 255);
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+  margin-bottom: 5px;
+  font-size: 30px !important;
+}
+
+p {
+  font-family: Roboto;
+  font-size: medium;
+}
+
+label {
+  font-family: Roboto Condensed;
+}
+
+a {
+  text-decoration: none;
+  color: white
+}
+
+.background-section {
+  background-image: url(./images/md-pc.jpg);
+  /* Replace "image.jpg" with the path to your image */
+  background-size: cover;
+  /* Set the background image size to cover the entire section */
+  background-position: center;
+  /* Center the background image within the section */
+  background-repeat: no-repeat;
+  /* Prevent the background image from repeating */
+  width: 100%;
+  height: 600px;
+  position: relative;
+  /* Make the section a positioning context for the search bar */
+}
+
+.search-bar {
+  position: absolute;
+  /* Position the search bar relative to the section */
+  bottom: 250px;
+  /* Adjust the vertical position as needed */
+  left: 50%;
+  /* Center the search bar horizontally */
+  transform: translateX(-50%);
+  /* Center the search bar horizontally */
+  background: rgba(255,
+      255,
+      255,
+      0.7);
+  /* Set a background color or style for the search bar */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 300px;
+  height: 25px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: roboto;
+  font-size: 16px;
+  margin: 14px;
+}
+
+.search-bar button {
+  padding: 10px;
+  width: 100px;
+  height: 44px;
+  margin: 15px;
+  background-color: rgb(5, 31, 48);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Roboto condensed;
+  font-size: 20px;
+}
+
+#about-me {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+}
+
+#education {
+  padding: 2rem;
+  background-color: rgb(57, 59, 60);
+}
+
+.card-container {
+  text-align: center;
+}
+
+.card {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: center;
+  margin: 20px;
+  background-color: rgb(255, 255, 255, 0.8);
+  max-width: 150px;
+  width: 100%;
+  height: 280px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#button1 {
+  color: white;
+  /* Default text color */
+  font-family: roboto;
+  font-size: 16px;
+  background-color: rgb(50, 50, 50);
+  /* Default background color */
+  border: 1px solid grey;
+  /* Border color */
+  border-radius: 15px;
+  padding: 8px 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.5s, color 0.5s;
+  /* Smooth color transition */
+}
+
+#button1:hover {
+  background-color: rgb(5, 31, 48);
+  color: black;
+  /* Not working*/
+  transition: background-color 0.5s, color 0.5s;
+  /* Smooth color transition */
+}
+
+#button2 {
+  margin-top: 10px;
+  color: white;
+  font-family: roboto condensed;
+  font-size: 16px;
+  background-color: rgb(50, 50, 50);
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.test{
+  margin-bottom: 50px;
+}

@@ -1,103 +1,164 @@
 <!DOCTYPE html>
-<!--This is a semantic webpage-->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MOHAMED NAFTI</title>
-  </head>
-  <!--rgb : 0.6 = 60% transparence-->
-  <header style="background-color: rgb(6, 76, 127, 0.6); padding: 1.5em">
-    <h1 style="color: #fff; text-align: center">MOHAMED NAFTI</h1>
-    <nav style="text-align: center">
-      <a href="#About me" style="color: #fff">About Me</a>
-      <a href="#Projects" style="color: #fff; margin: 25px">Projects</a>
-      <a href="#Contact" style="color: #fff">Contact me</a>
-    </nav>
-  </header>
-  <body background="./images/Background.jpg" style="font-family: Verdana">
-    <!-- Replace with the URL of your background image -->
+<!---------------Head-------------->
 
-    <section id="About me" style="padding: 2rem; text-align: center">
-        <div>
-            <h2>About Me</h2>
-            <hr color="black" width="90">
-            <img src="./images/Profile.png" width="150" >
-            <br>
-            <p>
-              Hi, my name is Mohamed Nafti.
-              <br />
-              Welcome to my first website using HTML only. There is no css, just a
-              little bit of styles.
-              <br />
-              This is how internet looked like in the early 90's. 
-              <br>
-              Who knows ?! I might
-              be your futur web developper:)
-            </p>
-        </div>
-      
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOHAMED NAFTI</title>
+  <link rel="stylesheet" href="portfolio.css">
 
-    <section id="Projects" style="padding: 2rem; text-align: center">
-      <h2>Projects</h2>
-      <hr color="black" width="90">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&display=swap"
+    rel="stylesheet">
 
-      <article 
-        style="
-          background-color: rgba(255, 255, 255, 0.6);
-          padding: 1rem;
-          border-radius: 5px;
-          margin-bottom: 20px;
-        "
-      >
-        <h3>Project 1</h3>
-        <p>
-            <ul style="text-align: left">
-                <li>Making a portfolio using HTML.</li>
-                <li>Sharing it with my instructor using Github.</li>
-            </ul>
-        </p>
-      </article>
-      <article
-        style="
-          background-color: rgba(255, 255, 255, 0.8);
-          padding: 1rem;
-          border-radius: 5px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          margin-bottom: 20px;
-        "
-      >
-        <h3>Project 2</h3>
-        <p>
-            <ul style="text-align: left">
-                <li>Work in progress.</li>
-                <li>It should be a css project.</li>
-            </ul>
-        </p>
-      </article>
-    </section>
-    <a href="#top" style="color:black"><b>Haut de la page</b></a>
-    <br>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<!---------------Head/end-------------->
+<!---------------Body-------------->
+<!---------------Header--------------->
+<header>
+  <nav>
+    <div class="header-content">
+      <h1>Mohamed Nafti</h1>
+      <ul style="width: fit-content">
+        <li class=navbar><span class="material-symbols-outlined">
+            home
+          </span></li>
+        <li class=navbar><a href="#about-me">About me</a></li>
+        <li class=navbar><a href="#education">Education</a></li>
+        <li class=navbar>Projects</li>
+        <li class=navbar><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
-    <footer id="Contact" 
-        style="padding: 2rem;
-        margin-top: 20px; 
-        text-align: center;
-        background-color: rgb(6, 76, 127); 
+<!---------------Header/end--------------->
+
+<!---------------background-section--------------->
+
+<section class="background-section">
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." />
+    <button><b>Search</b></button>
+  </div>
+</section>
+
+<!---------------background-section/end--------------->
+
+<!---------------About me--------------->
+
+<section id="about-me">
+  <div style="width: 300px; margin: 0 auto">
+    <h2><b>About Me</b></h2>
+    <img src="./images/Profile.png" width="150" />
+    <br />
+    <p style="text-align: justify">
+      Hi, my name is Mohamed Nafti.
+      <br />
+      Welcome to my first web page using HTML and CSS.
+      <br />
+      Who knows ?! I might be your next web developper.
+    </p>
+  </div>
+</section>
+
+<!---------------About me/end--------------->
+
+<!---------------Education--------------->
+
+<section id="education">
+
+  <!-----------Education/h2--------------->
+  <h2 style="color: white; ">Education</h2>
+
+  <!-----------Education/h2 End-------------->
+
+  <!-----------Education/cards--------------->
+
+  <div class="card-container">
+
+    <article class="card">
+      <img src="./images/FMT.png" alt="Logo FMT" style="font-family: roboto; max-width: 150px; padding: 0px" />
+      <h3 style="padding: 0;height: 60px;">Faculté de Médecine de Tunis</h3>
+      <h4 style="padding: 0;"><b>1996-2003</b></h4>
+      <p style="padding: 0rem; margin:10px; font-size: small;">Doctorat en médecine</p>
+    </article>
+
+    <article class="card">
+      <img src="./images/IHE.png" alt="Logo IHET" style="font-family: roboto; max-width: 150px; padding: 0px" />
+      <h3 style="padding: 0;height: 60px;">Institut des hautes études de Tunis</h3>
+      <h4 style="padding: 0;"><b>2009-2010</b></h4>
+      <p style="padding: 0rem; margin:2px; font-size: small;">Mastère en administration des entreprises</p>
+    </article>
+
+    <article class="card">
+      <img src="./images/Escem.png" alt="Logo ESCEM" style="font-family: roboto; max-width: 150px; padding: 0px" />
+      <h3 style="padding: 0;height: 60px;">École supérieure de commerce et de management</h3>
+      <h4 style="padding: 0;"><b>2009-2011</b></h4>
+      <p style="padding: 0; margin:2px;font-size: small;">Mastère en management de la santé</p>
+    </article>
+
+    <article class="card">
+      <img src="./images/ULAVAL.png" alt="Logo ULAVAL" style="font-family: roboto; max-width: 150px; padding: 0px" />
+      <h3 style="padding: 0;height: 60px;">Université LAVAL</h3>
+      <h4 style="padding: 0;"><b>2012-2017</b></h4>
+      <p style="padding: 0; margin:2px; font-size: small;">Maîtrise en épidémiologie</p>
+    </article>
+
+    <article class="card">
+      <img src="./images/gomycode.png" alt="Logo Gomycode"
+        style="font-family: roboto; max-width: 150px; padding: 0px" />
+      <h3 style="padding: 0;height: 60px;">Gomycode</h3>
+      <h4 style="padding: 0;"><b>2023</b></h4>
+      <p style="padding: 0; margin:2px; font-size: small;">Full stack JS</p>
+    </article>
+
+  </div>
+
+</section>
+
+<!-----------Education/cards end--------------->
+
+<!---------------Education/end--------------->
+
+<br>
+
+
+<button id="button1"><a href="#top">Haut de la page</a></button>
+
+
+
+<!---------------Footer--------------->
+
+<footer style="
+        padding: 2rem;
+        margin-top: 20px;
+        background-color: rgb(5, 31, 48);
         color: #fff;
-        padding: 1em">
-      <h2>Contact me</h2>
-      <hr color="white" width="90">
-      <form style="text-align: left">
-        <label for="Your email"><b>Your email</b></label>
-        <input type="email" placeholder="Email" id="email-sender" />
-        <br />
-        <label for="Message"><b>Message</b></label>
-        <input type="text" placeholder="Write your message here."/>
-        <br>
-        <input type="submit" value="Envoyer" />
-      </form>
-    </footer>
-  </body>
+      ">
+  <h2 id="contact" style="color: white;">Contact me</h2>
+  <form> 
+    <label class="test" for="email-sender"><b>Your email</b></label>
+    <br>
+    <input type="email" placeholder="Email" id="email-sender" />
+    <br />
+    <label for="Message"><b>Message</b></label>
+    <br>
+    <input type="text" placeholder="Write your message here." />
+    <br />
+  </form>
+  <button id="button2">Envoyer</button>
+</footer>
+<!---------------Footer/end--------------->
+</body>
+
+<!---------------Body/end-------------->
+
 </html>
